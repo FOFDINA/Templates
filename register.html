@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Clshop</title>
+    <!-- Fichier Bootstrp  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Debut en tete  -->
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">CLSHOP</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">ACCUEIL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="a-propos.html">A PROPOS</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                BOUTIQUE
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="telephone.html">Telephones</a></li>
+                                <li><a class="dropdown-item" href="ordinateur.html">Ordinateurs</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="electromenager.html">Electromenagers</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html">INSCRIPTION</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">CONNEXION</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Chercher</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Fin en tete  -->
+
+        <!-- Debut section Formulaire  -->
+        <div class="mx-auto mt-5 p-4 text-white" style="width: 500PX;background: darkblue;">
+            <h1>Inscription</h1>
+            <form action="">
+                <div class="mb-3 mt-3">
+                    <label class="form-label" for="">Nom</label>
+                    <input class="form-control" type="text" placeholder="Nom">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label class="form-label" for="">Prénom</label>
+                    <input class="form-control" type="text" placeholder="Prénom">
+                </div>
+                <div class="mb-3 mt-3">
+                    <label class="form-label" for="">Mail</label>
+                    <input class="form-control" type="text" placeholder="mail">
+                </div>
+                <div>
+                    <label for="">Sexe</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Male
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                        <label class="form-check-label" for="flexRadioDefault2">
+                          Female
+                        </label>
+                      </div>
+                </div>
+                <!-- Debut Dexieme option  -->
+                <div>
+                    <label for="">Sexe</label>
+                    <select class="form-select mb-2" aria-label="Default select example">
+                        <option selected>Votre Sexe</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                      </select>
+                </div>
+                <!-- Fin Dexieme option  -->
+                <div class="mb-4">
+                    <label class="form-label" for="">Mot de Passe</label>
+                    <input class="form-control" type="password" placeholder="Saisir votre mot de passe">
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="">Confirmer Le Mot de Passe</label>
+                    <input class="form-control" type="password" placeholder="Confirmer votre mot de passe">
+                </div>
+                <div class="mb-2">
+                    <input class="btn btn-primary form-control" type="submit" value="S'inscrire">
+                </div>
+            </form>
+        </div>
+        <!-- Fin section Formulaire  -->
+    </div>
+</body>
+
+</html>
